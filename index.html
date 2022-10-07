@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   
@@ -16,15 +17,22 @@
 </head>
 <body>
 
-  <div class="container-main">
-    <h1>Get <span class="purple">insights</span> that help your business grow.</h1>
-    <p>
-      Discover the benefits of data analytics and make better decisions regarding revenue, customer
-      experience, and overall efficiency.
-    </p>
-    <p>10k+ <span class="next-row">companies</span></p>
-    <p>314 <span class="next-row">templates</span></p>
-    <p>12m+ <span class="next-row">queries</span></p>
+  <div class="main">
+    <div class="container-main">
+      <picture>
+        <source srcset="images/image-header-mobile.jpg" />
+        <source media="(min-width: 600px)" srcset="images/image-header-desktop.jpg">
+        <img src="images/image-header-mobile.jpg" alt="A group of people working on a computer while having fun">
+      </picture>
+      <h2>Get <span class="purple">insights</span> that help your business grow.</h2>
+      <p>
+        Discover the benefits of data analytics and make better decisions regarding revenue, customer
+        experience, and overall efficiency.
+      </p>
+      <p class="first-row row-1">10k+ <span class="next-row">Companies</span></p>
+      <p class="first-row row-2">314 <span class="next-row">Templates</span></p>
+      <p class="first-row row-3">12M+ <span class="next-row">Queries</span></p>
+    </div>
   </div>
 
   <div class="attribution">

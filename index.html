@@ -17,27 +17,49 @@
 </head>
 <body>
 
-  <div class="main">
-    <div class="container-main">
-      <picture>
-        <source srcset="images/image-header-mobile.jpg" />
-        <source media="(min-width: 600px)" srcset="images/image-header-desktop.jpg">
-        <img src="images/image-header-mobile.jpg" alt="A group of people working on a computer while having fun">
-      </picture>
-      <h2>Get <span class="purple">insights</span> that help your business grow.</h2>
-      <p>
-        Discover the benefits of data analytics and make better decisions regarding revenue, customer
-        experience, and overall efficiency.
-      </p>
-      <p class="first-row row-1">10k+ <span class="next-row">Companies</span></p>
-      <p class="first-row row-2">314 <span class="next-row">Templates</span></p>
-      <p class="first-row row-3">12M+ <span class="next-row">Queries</span></p>
+
+      <!-- Main container body that exists solely to flex the attribution into a centered column -->
+  <div class="main-container">
+
+      <!-- Code for the container that has everything in it -->
+    <div class="container">
+
+      <!-- A div was added to place an accent background behind the picture element -->
+        <div class="picture-container">
+          <picture>
+            <source media="(max-width: 599px)" srcset="images/image-header-mobile.jpg" />
+            <source media="(min-width: 600px)" srcset="images/image-header-desktop.jpg" />
+            <img src="images/image-header-mobile.jpg" alt="A group of workers laughing and working around a set of small computers" />
+          </picture>
+        </div>
+    
+      <!-- The HTML portion of the page -->        
+          <p>Get <span class="insights">insights</span> that help your business grow.</p>
+          <p>Discover the benefits of data analytics and make better decisions
+             regarding revenue, customer experience, and overall efficiency.
+          </p>
+          <div class="preview preview-1">
+            <p>10k+</p>
+            <p>Companies</p>
+          </div>
+          <div class="preview preview-2">
+            <p>314</p>
+            <p>Templates</p>
+          </div>
+          <div class="preview preview-3">
+            <p>12M+</p>
+            <p>Queries</p>
+          </div>         
+    </div>
+
+    <!-- The attribution portion of the card -->
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Michael Johnson</a>.
     </div>
   </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  
 </body>
 </html>

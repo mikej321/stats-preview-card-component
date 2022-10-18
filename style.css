@@ -133,6 +133,11 @@ it easier to align things in flexbox. */
 a stylable flexbox. */
 
 @media (min-width: 600px) {
+
+  .main-container {
+    margin: 15rem auto
+  }
+
   .container {
     display: grid;
     grid-template-rows: 148px 148px 148px;

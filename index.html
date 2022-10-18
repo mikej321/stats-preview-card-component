@@ -25,7 +25,7 @@
     <div class="container">
 
       <!-- A div was added to place an accent background behind the picture element -->
-        <div class="picture-container">
+        <div class="picture-container item-4">
           <picture>
             <source media="(max-width: 599px)" srcset="images/image-header-mobile.jpg" />
             <source media="(min-width: 600px)" srcset="images/image-header-desktop.jpg" />
@@ -34,22 +34,26 @@
         </div>
     
       <!-- The HTML portion of the page -->        
-          <p>Get <span class="insights">insights</span> that help your business grow.</p>
-          <p>Discover the benefits of data analytics and make better decisions
-             regarding revenue, customer experience, and overall efficiency.
-          </p>
-          <div class="preview preview-1">
-            <p>10k+</p>
-            <p>Companies</p>
-          </div>
-          <div class="preview preview-2">
-            <p>314</p>
-            <p>Templates</p>
-          </div>
-          <div class="preview preview-3">
-            <p>12M+</p>
-            <p>Queries</p>
-          </div>         
+          <div class="card-information">
+            <p class="item-1">Get <span class="insights">insights</span> that help your business grow.</p>
+            <p class="item-2">Discover the benefits of data analytics and make better decisions
+               regarding revenue, customer experience, and overall efficiency.
+            </p>
+            <div class="preview-container item-3">
+              <div class="preview preview-1">
+                <p>10k+</p>
+                <p>Companies</p>
+              </div>
+              <div class="preview preview-2">
+                <p>314</p>
+                <p>Templates</p>
+              </div>
+              <div class="preview preview-3">
+                <p>12M+</p>
+                <p>Queries</p>
+              </div>
+            </div>
+          </div>        
     </div>
 
     <!-- The attribution portion of the card -->
@@ -58,6 +62,8 @@
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Michael Johnson</a>.
     </div>
+
+    <script src="index.js"></script>
   </div>
 
   
